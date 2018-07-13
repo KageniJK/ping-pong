@@ -1,23 +1,36 @@
-.form-control{
+.form-control {
   max-width: 30%;
 }
 
-button{
+button {
   margin-top: 30px;
 }
 
-body{
-  background-color: #2EC4B6;
+body {
+  background-color: #190E4F;
+  color: #D8DB94;
 }
 
-.title{
-  background-color: #190E4F;
+.title {
+  background-color: #03012C;
   text-align: center;
   width: 100%;
   height: 10rem;
   color: #D8DBE2;
+  padding-top: 3%;
 }
 
-.title h1{
+.title h1 {
   font-size: 60px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.left {
+  background-color: #8D6B94;
+  height: 40rem;
 }
