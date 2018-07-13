@@ -3,8 +3,14 @@ $(document).ready(function() {
 
   $(".input form").submit(function(event) {
     event.preventDefault();
+    document.getElementById("outList").reset();
     var number = parseInt($("input#num").val());
-    
+    pingpong(number);
+    results.forEach(function(result){
+      $("ul#outList").append("<li>"+result+"</li>");
+    });
+
+
     //$(".output").text("test");
 
   });
@@ -13,26 +19,26 @@ $(document).ready(function() {
 
 
 // Back end Logic
-var result =[];
+var results =[];
 function pingpong(x) {
   for (i = 1; i <= x; i++) {
     if (i % 3 === 0) {
       if (i % 15 === 0) {
         //console.log("pingpong")
-        result.push("pingPong");
+        results.push("Ping-Pong");
         //return result
       } else {
         //console.log("ping")
-        result.push("ping");
+        results.push("Ping");
         //return result;
       }
     } else if (i % 5 === 0) {
       //console.log("pong")
-      result.push("pong");
+      results.push("Pong");
       //return result;
     } else {
       //console.log(i);
-      result.push(i);
+      results.push(i);
     };
   }
 
