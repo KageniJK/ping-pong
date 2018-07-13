@@ -5,3 +5,19 @@
 button{
   margin-top: 30px;
 }
+
+body{
+  background-color: #2EC4B6;
+}
+
+.title{
+  background-color: #190E4F;
+  text-align: center;
+  width: 100%;
+  height: 10rem;
+  color: #D8DBE2;
+}
+
+.title h1{
+  font-size: 60px;
+}
