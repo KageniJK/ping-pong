@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   $(".input form").submit(function(event) {
     event.preventDefault();
+
     var number = parseInt($("input#num").val());
     pingpong(number);
     results.forEach(function(result) {
