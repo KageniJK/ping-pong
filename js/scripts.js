@@ -1,27 +1,16 @@
 // Front end
 $(document).ready(function() {
-
   $(".input form").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#num").val());
     $(".outList").empty();
-    pingpong(number);
-    // console.log(results);
-    // results.forEach(function(result) {
-    //   $("ul.outList").append("<li>" + result + "</li>");
-    // });
-
-
-
+    pingPong(number);
   });
-
 });
 
 
 // Back end Logic
-//var results = [];
-
-function pingpong(x) {
+function pingPong(x) {
   for (i = 1; i <= x; i++) {
     if (i % 3 === 0) {
       if (i % 5 === 0) {
