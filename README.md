@@ -38,4 +38,4 @@
 
 #### A live view of the repository can be found at: https://kagenijk.github.io/ping-pong/
 
-Licence can be found here: [licence](LICENCE)
+This is lecensed under an MIT license that can be found at: [License](LICENSE)

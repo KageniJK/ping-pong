@@ -9,6 +9,8 @@ button {
 body {
   background-color: #190E4F;
   color: #D8DB94;
+  overflow: auto;
+  margin: 10px;
 }
 
 .title {
@@ -25,7 +27,6 @@ body {
 }
 
 .container-fluid {
-  margin: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -33,4 +34,11 @@ body {
 .left {
   background-color: #8D6B94;
   height: 40rem;
+  font-size: 60px
+}
+
+#output{
+  max-height: 35rem;
+  overflow-y: scroll;
+
 }

@@ -4,7 +4,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#num").val());
     $(".outList").empty();
-    if (Number.isInteger(number) && number>0){
+    if (number>0){
     pingPong(number);
   } else {
     alert("Please enter a positive number");
